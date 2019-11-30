@@ -5,11 +5,11 @@ const UserItem = (props) => {
         <li className="collection-item avatar">
             <img src={props.user.image} alt="" class="circle" />
 
-            <span className="title">First Name</span>
+            <span className="title">{props.user.name}.</span>
 
-            <p><i class="tiny material-icons">email</i>Email <br /> </p>
+            <p><i class="tiny material-icons"></i>{props.user.protectEmail()} <br /> </p>
 
-            <p><i class="tiny material-icons">cake</i>Birthday <br /> </p>
+            <p><i class="tiny material-icons">cake</i> {props.user.dob}<br /> </p>
         </li>
     )
 

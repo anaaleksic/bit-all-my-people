@@ -1,19 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Main from '../Main.js'
 
 const Header = (props) => {
 
     return (
-        //Ovo sam kopirala sa materilecss.com    
+        //Ovo je sa materilecss.com    
         <nav>
-            <div className="nav-wrapper">
-                <a href="#" className="brand-logo center">React Users</a>
+            <div>
+
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                    <li> <Link to='/about'> About Page </Link></li>
                 </ul>
             </div>
-        </nav>
+        </nav >
     )
 
 }

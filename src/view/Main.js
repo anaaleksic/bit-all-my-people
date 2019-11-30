@@ -1,10 +1,16 @@
-import React from 'react';
-import UserPage from './users/UserPage'
+import React from 'react'
+import UsersPage from './users/UsersPage'
+import AboutPage from './users/AboutPage'
+import { Switch, Route } from "react-router-dom"
 
 const Main = (props) => {
     return (
         <main>
-            <UserPage />
+            <Switch>
+                <Route exact path='/' component={UsersPage} />
+                <Route exact path='/about' component={AboutPage} />
+                <Route exact path='/react-users' component={UsersPage} />
+            </Switch>
         </main>
 
     )

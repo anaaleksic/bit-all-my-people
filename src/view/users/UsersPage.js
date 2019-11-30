@@ -13,10 +13,9 @@ class UsersPage extends React.Component {
 
     }
 
-    // componentDidMount() {
-    //     fetchUsers()
-    //         .then(users => this.setState({ users: users })) //ovo se cuva u state
-    // }
+    componentDidMount() {
+        this.loadUsers();
+    }
 
     loadUsers() {
         fetchUsers()
