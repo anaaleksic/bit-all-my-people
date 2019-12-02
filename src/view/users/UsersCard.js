@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from './Grid'
 
-const UsersGrid = (props) => {
+const UserCard = (props) => {
     return (
 
         <div class="col s12 m4">
@@ -12,7 +12,7 @@ const UsersGrid = (props) => {
                         <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        <p>{props.user.name}</p>
                     </div>
                 </div>
             </div>
@@ -20,3 +20,5 @@ const UsersGrid = (props) => {
 
     )
 }
+
+export default UserCard;

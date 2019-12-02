@@ -9,8 +9,14 @@ const Header = (props) => {
         <nav>
             <div>
 
+
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li> <Link to='/about'> About Page </Link></li>
+
+                </ul>
+
+                <ul>
+                    <li> <Link to='/react-users'>React Users </Link></li>
                 </ul>
             </div>
         </nav >

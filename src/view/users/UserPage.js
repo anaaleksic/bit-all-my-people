@@ -1,10 +1,6 @@
 import React from 'react'
 import UserList from './UserList'
 import { fetchUsers } from '../../services/UserServices'
-import Grid from './Grid'
-
-import SearchBox from './SearchBox'
-import Buttons from './Buttons';
 
 
 class UsersPage extends React.Component {
@@ -17,11 +13,12 @@ class UsersPage extends React.Component {
 
     }
 
-    componentDidMount() {
-        this.loadUsers();
-    }
+    // componentDidMount() {
+    //     fetchUsers()
+    //         .then(users => this.setState({ users: users })) //ovo se cuva u state
+    // }
 
-    loadUsers = () => {
+    loadUsers() {
         fetchUsers()
             .then(users => this.setState({ users: users })) //ovo se cuva u state
     }
@@ -30,15 +27,9 @@ class UsersPage extends React.Component {
     render() {
         return (
             <>
-                <SearchBox></SearchBox>
-                <Buttons loadUsers={this.loadUsers} />
-
-
-
+                <button onClick={() => this.loadUsers()} > sdf</button>
                 <UserList users={this.state.users} />
-                <Grid />
             </>
-
         )
     }
 }
