@@ -21,3 +21,36 @@
   color: #09d3ac;
 }
 
+#bit-title{
+  margin: 0 auto;
+  padding: 10px 837px 0;
+}
+
+.search{
+  background-color: lightgray;
+  border-radius:10px;
+  border:2px solid black;
+
+
+}
+
+
+.badge{
+
+  color:black;
+  position:absolute;
+  top: -46px;
+  right:21px;
+}
+
+
+.buttons{
+display:block;
+  color:black;
+  
+}
+.reload{
+  position:absolute;
+  top:100px;
+  right:22px;
+}

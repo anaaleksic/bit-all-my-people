@@ -1,12 +1,12 @@
 import React from 'react'
-import UserPage from './UsersPage'
-import UsersCard from './UsersCard'
+import UsersPage from './UsersPage'
+import UserCard from './UserCard'
 
 const Grid = (props) => {
     return (
         <>
             <div className='row'>
-                {props.users.map(userFromArr => <UsersCard user={userFromArr} />)}
+                {props.users.map(userFromArr => <UserCard key={userFromArr.id} user={userFromArr} />)}
             </div>
         </>
     )

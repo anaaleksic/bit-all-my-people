@@ -2,6 +2,7 @@ import React from 'react'
 import UsersPage from './users/UsersPage'
 import AboutPage from './users/AboutPage'
 import { Switch, Route } from "react-router-dom"
+// import Grid from './users/UsersCard'
 
 const Main = (props) => {
     return (
